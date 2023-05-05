@@ -1,0 +1,43 @@
+.header {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 200px;
+  grid-template-rows: 80px;
+  grid-template-areas:
+    ". logo ext ."
+    "nav nav nav nav";
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header > nav {
+  grid-area: nav;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #555;
+  padding: 0 200px;
+}
+
+.navLink {
+  display: block;
+  width: 100px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #eee;
+  box-sizing: border-box;
+  margin-bottom: 2px;
+}
+
+.navLink.active {
+  color: #fff;
+  margin-bottom: 0;
+}
+.navLink.active:after {
+  content: "";
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  border-bottom: 2px solid #fff;
+}

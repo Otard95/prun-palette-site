@@ -1,25 +1,18 @@
-import type { Component } from 'solid-js';
+import type { Component } from 'solid-js'
 
-import logo from './logo.svg';
-import styles from './App.module.css';
+import styles from './App.module.css'
+import Routes from './Routes'
+import Header from './elements/Header'
+import Footer from './elements/Footer';
 
 const App: Component = () => {
   return (
     <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
-      </header>
+      <Header />
+      <div class={styles.page}>
+        <Routes />
+      </div>
+      <Footer />
     </div>
   );
 };

@@ -37,6 +37,7 @@
 
 @media (min-width: 1400px) {
   .page {
-    margin: 0 25vw;
+    width: 800px;
+    margin: 0 auto;
   }
 }

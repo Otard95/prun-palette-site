@@ -4,6 +4,7 @@ import { A, useLocation } from '@solidjs/router'
 import styles from './Header.module.css'
 
 import Logo from '../components/Logo'
+import ExtLink from './ExtLink'
 
 const links: { name: string, href: string }[] = [
   { name: 'Home', href: '/' },
@@ -19,9 +20,15 @@ const Header: Component = () => {
       <span style={{'grid-area': 'logo'}}>
         <Logo />
       </span>
+      <div class={styles['ext']}>
+        <ExtLink color='#1967d2' href='https://www.google.com/chrome/'>Chrome</ExtLink>
+        <ExtLink color='#ed226f' href='https://www.google.com/chrome/'>Firefox</ExtLink>
+        <ExtLink href='https://www.google.com/chrome/'>Github</ExtLink>
+      </div>
+      <hr/>
       <nav>
         {links.map((link, i) => (
-          <A href={link.href} class={`${styles.navLink} ${pathname() === link.href ? styles.active : ''}`}>
+          <A href={link.href} class={`${styles['nav-link']} ${pathname() === link.href ? styles.active : ''}`}>
             {link.name}
           </A>
         ))}

@@ -1,0 +1,13 @@
+.chrome-link {
+  display: block;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #eee;
+  box-sizing: border-box;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 2px solid #777;
+  border-radius: 5px;
+}

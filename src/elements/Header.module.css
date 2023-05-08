@@ -1,24 +1,69 @@
 .header {
   display: grid;
-  grid-template-columns: 200px 1fr 1fr 200px;
-  grid-template-rows: 80px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 80px 1px 70px;
   grid-template-areas:
-    ". logo ext ."
-    "nav nav nav nav";
+    "logo ext"
+    "sep sep"
+    "nav nav";
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .header {
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-template-areas:
+      " . logo ext   . "
+      "sep sep sep sep"
+      ".   nav nav  . ";
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    grid-template-columns: 200px 1fr 1fr 200px;
+    grid-template-areas:
+      " . logo ext  . "
+      "sep sep sep sep"
+      " .  nav nav  . ";
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-areas:
+      " . logo ext  . "
+      "sep sep sep sep"
+      " .  nav nav  . ";
+  }
+}
+
+.header > hr {
+  grid-area: sep;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #777;
+  margin: 0;
 }
 
 .header > nav {
   grid-area: nav;
   height: 100%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  border-top: 1px solid #555;
-  padding: 0 200px;
 }
 
-.navLink {
+@media (min-width: 768px) {
+  .header > nav {
+    justify-content: start;
+  }
+}
+
+.nav-link {
   display: block;
   width: 100px;
   text-align: center;
@@ -30,14 +75,21 @@
   margin-bottom: 2px;
 }
 
-.navLink.active {
+.nav-link.active {
   color: #fff;
   margin-bottom: 0;
 }
-.navLink.active:after {
+.nav-link.active:after {
   content: "";
   display: block;
   width: 30%;
   margin: 0 auto;
   border-bottom: 2px solid #fff;
+}
+
+.ext {
+  grid-area: ext;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }

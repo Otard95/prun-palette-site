@@ -4,7 +4,8 @@ import { A, useLocation } from '@solidjs/router'
 import styles from './Header.module.css'
 
 import Logo from '../components/Logo'
-import ExtLink from './ExtLink'
+import ExtLink from '../components/ExtLink'
+import ExtensionGet from './ExtensionGet'
 
 const links: { name: string, href: string }[] = [
   { name: 'Home', href: '/' },
@@ -21,8 +22,7 @@ const Header: Component = () => {
         <Logo />
       </span>
       <div class={styles['ext']}>
-        <ExtLink color='#1967d2' href='https://www.google.com/chrome/'>Chrome</ExtLink>
-        <ExtLink color='#ed226f' href='https://www.google.com/chrome/'>Firefox</ExtLink>
+        <ExtensionGet />
         <ExtLink href='https://www.google.com/chrome/'>Github</ExtLink>
       </div>
       <hr/>

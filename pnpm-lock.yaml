@@ -4,9 +4,15 @@ dependencies:
   '@solidjs/router':
     specifier: 0.8.2
     version: 0.8.2(solid-js@1.6.10)
+  '@types/ua-parser-js':
+    specifier: 0.7.36
+    version: 0.7.36
   solid-js:
     specifier: ^1.6.10
     version: 1.6.10
+  ua-parser-js:
+    specifier: 1.0.35
+    version: 1.0.35
 
 devDependencies:
   typescript:
@@ -580,6 +586,10 @@ packages:
       solid-js: 1.6.10
     dev: false
 
+  /@types/ua-parser-js@0.7.36:
+    resolution: {integrity: sha512-N1rW+njavs70y2cApeIw1vLMYXRwfBy+7trgavGuuTfOd7j1Yh7QTRc/yqsPl6ncokt72ZXuxEU0PiCp9bSwNQ==}
+    dev: false
+
   /ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
     engines: {node: '>=4'}
@@ -879,6 +889,10 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
+
+  /ua-parser-js@1.0.35:
+    resolution: {integrity: sha512-fKnGuqmTBnIE+/KXSzCn4db8RTigUzw1AN0DmdU6hJovUTbYJKyqj+8Mt1c4VfRDnOVJnENmfYkIPZ946UrSAA==}
+    dev: false
 
   /update-browserslist-db@1.0.10(browserslist@4.21.4):
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}

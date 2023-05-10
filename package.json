@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@solidjs/router": "0.8.2",
-    "solid-js": "^1.6.10"
+    "@types/ua-parser-js": "0.7.36",
+    "solid-js": "^1.6.10",
+    "ua-parser-js": "1.0.35"
   }
 }

@@ -30,7 +30,7 @@ const BrowserNotFound: Component<BrowserNotFoundProps> = ({ incompatible, size }
         <ExtLink color='#1967d2' href='https://www.google.com/chrome/' size={size}>
           {size === 'large' && 'Get for '}Chrome
         </ExtLink>
-        <ExtLink color='#ed226f' href='https://www.google.com/chrome/' size={size}>
+        <ExtLink color='#ed226f' href='https://addons.mozilla.org' size={size}>
           {size === 'large' && 'Get for '}Firefox
         </ExtLink>
       </div>

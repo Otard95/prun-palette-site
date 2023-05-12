@@ -3,7 +3,7 @@ import type { Component } from 'solid-js'
 import styles from './App.module.css'
 import Routes from './Routes'
 import Header from './elements/Header'
-import Footer from './elements/Footer';
+// import Footer from './elements/Footer';
 
 const App: Component = () => {
   return (
@@ -12,7 +12,7 @@ const App: Component = () => {
       <div class={styles.page}>
         <Routes />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

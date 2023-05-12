@@ -10,7 +10,7 @@ import ExtensionGet from './ExtensionGet'
 
 const links: { name: string, href: string }[] = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
+  { name: 'Features', href: '/features' },
   { name: 'Privacy', href: '/privacy' },
 ]
 

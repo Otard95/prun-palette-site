@@ -89,7 +89,78 @@
 
 .ext {
   grid-area: ext;
+}
+.ext > div {
   display: flex;
   justify-content: right;
   align-items: center;
+}
+.ext .ext-burger {
+  display: none;
+}
+.ext p {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .ext {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+  }
+  .ext p {
+    display: block;
+    text-align: center;
+  }
+  .ext > div {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    position: relative;
+    background-color: #282c34;
+  }
+  .ext > div.ext-burger-show {
+    height: auto;
+    width: 300px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 80px 20px 20px;
+    overflow: visible;
+  }
+  .ext > div.ext-burger-show > *:not(.ext-burger) {
+    display: block;
+  }
+  .ext > div > *:not(.ext-burger) {
+    display: none;
+  }
+  .ext .ext-burger {
+    position: absolute;
+    border: none;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+  .ext a {
+    width: 100%;
+    margin: 0;
+  }
 }

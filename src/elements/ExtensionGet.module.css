@@ -13,3 +13,13 @@
 .browser-not-found > div {
   display: flex;
 }
+
+@media (max-width: 576px) {
+  .browser-not-found {
+    width: 100%;
+  }
+  .browser-not-found > div {
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

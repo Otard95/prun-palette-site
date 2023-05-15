@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.shortcut {
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 3px 5px;
+  color: #a87909;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.label {
+  font-size: 0.9rem;
+  margin-right: 5px;
+}

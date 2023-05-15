@@ -17,27 +17,25 @@
 }
 
 .h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.5;
 }
 
 .h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.h5 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.h6 {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
 }
 
-/* @media */
+.h5 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.h6 {
+  font-size: 0.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+}

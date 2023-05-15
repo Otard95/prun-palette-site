@@ -1,10 +1,13 @@
 import type { Component } from 'solid-js'
+
+import styles from './Privacy.module.css'
+
 import Heading from '../components/Heading'
 import Paragraph from '../components/Paragraph';
 
 const Privacy: Component = () => {
   return (
-    <div>
+    <div class={styles.content}>
       <Heading.h2>Introduction</Heading.h2>
       <Paragraph>
         This Privacy Policy explains how the PrUn Palette, a browser extension

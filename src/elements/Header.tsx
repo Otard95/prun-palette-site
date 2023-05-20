@@ -47,7 +47,7 @@ const Header: Component = () => {
           <button onClick={() => setOpen(!open())} class={styles['ext-burger']} style={`background-image: url("${burger}");`}/>
           <p>Get the extension or check out the source code!</p>
           <ExtensionGet />
-          <ExtLink href='https://www.google.com/chrome/'>Github</ExtLink>
+          <ExtLink href='https://github.com/Otard95/prun-palette'>Github</ExtLink>
         </div>
       </div>
       <hr/>

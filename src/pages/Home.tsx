@@ -21,7 +21,7 @@ import type { Component } from 'solid-js'
 import Video from '../components/Video';
 
 import styles from './Home.module.css'
-import demoVideo from '../assets/demo.mp4'
+import demoVideo from '../assets/demoV2.mp4'
 import demoPlaceholder from '../assets/demo-placeholder.png'
 import ExtensionGet from '../elements/ExtensionGet';
 

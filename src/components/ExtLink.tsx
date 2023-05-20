@@ -36,6 +36,7 @@ const ExtLink: Component<PropsWithChildren<ExtLinkProps>> = ({
     <a
       class={`${sizeClass()} ${styles['external-link']}`}
       href={href} style={{ 'border-color': color }}
+      target='_blank' rel='noopener noreferrer'
     >
       {children}
     </a>

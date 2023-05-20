@@ -22,14 +22,17 @@ import ExtLink, { ExtLinkProps } from '../components/ExtLink'
 
 import styles from './ExtensionGet.module.css'
 
+const chromeUrl = 'https://chrome.google.com/webstore/detail/prun-palette/lfnnlbomdeeijpmgigmkkdemhpjelikg'
+const firefoxUrl = 'https://addons.mozilla.org/en-US/firefox/addon/prun-palette/'
+
 const compatibleBrowsers = ['Chrome', 'Chromium', 'Opera', 'Vivaldi', 'Brave', 'Firefox']
 const browserToProps = new Map<string, ExtLinkProps>([
-  ['Chrome', { href: 'https://www.google.com/chrome/', color: '#1967d2' }],
-  ['Chromium', { href: 'https://www.google.com/chrome/', color: '#1967d2' }],
-  ['Opera', { href: 'https://www.google.com/chrome/', color: '#1967d2' }],
-  ['Vivaldi', { href: 'https://www.google.com/chrome/', color: '#1967d2' }],
-  ['Brave', { href: 'https://www.google.com/chrome/', color: '#1967d2' }],
-  ['Firefox', { href: 'https://addons.mozilla.org', color: '#ed226f' }],
+  ['Chrome', { href: chromeUrl, color: '#1967d2' }],
+  ['Chromium', { href: chromeUrl, color: '#1967d2' }],
+  ['Opera', { href: chromeUrl, color: '#1967d2' }],
+  ['Vivaldi', { href: chromeUrl, color: '#1967d2' }],
+  ['Brave', { href: chromeUrl, color: '#1967d2' }],
+  ['Firefox', { href: firefoxUrl, color: '#ed226f' }],
 ])
 
 interface BrowserNotFoundProps {
@@ -45,10 +48,10 @@ const BrowserNotFound: Component<BrowserNotFoundProps> = ({ incompatible, size }
         </p>
       )}
       <div>
-        <ExtLink color='#1967d2' href='https://www.google.com/chrome/' size={size}>
+        <ExtLink color='#1967d2' href={chromeUrl} size={size}>
           {size === 'large' && 'Get for '}Chrome
         </ExtLink>
-        <ExtLink color='#ed226f' href='https://addons.mozilla.org' size={size}>
+        <ExtLink color='#ed226f' href={firefoxUrl} size={size}>
           {size === 'large' && 'Get for '}Firefox
         </ExtLink>
       </div>

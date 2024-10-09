@@ -16,27 +16,13 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 */
-.container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.container-inline {
-  display: inline-flex;
-  align-items: center;
-}
-
-.shortcut {
-  border: 2px solid #555;
-  border-radius: 5px;
-  padding: 3px 5px;
-  color: #a87909;
+.code {
+  border: 1px solid #555;
+  border-radius: 3px;
+  padding: 1px 3px;
+  color: #a58570;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
-}
-
-.label {
-  font-size: 0.9rem;
-  margin-right: 5px;
+  text-transform: uppercase;
 }

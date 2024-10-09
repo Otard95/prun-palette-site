@@ -29,3 +29,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #282c34; /* BG */
+  color: #eee; /* Text */
+  margin-bottom: 1em;
+}
+
+table th,
+table td {
+  border: 1px solid #777; /* Border */
+  padding: 5px 10px;
+  text-align: left;
+}
+table th {
+  padding: 10px 15px;
+}
+
+table th {
+  background: #404256; /* Gradient */
+  color: #eee; /* Dark text for contrast */
+}
+
+table tr:nth-child(even) {
+  background-color: #2e333d; /* Slightly lighter BG for even rows */
+}
+
+table tr:hover {
+  background-color: #343a46; /* Hover effect */
+}

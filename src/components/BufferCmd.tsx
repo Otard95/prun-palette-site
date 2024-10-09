@@ -18,42 +18,17 @@
 */
 import type { Component, PropsWithChildren } from 'solid-js'
 
-import styles from './KeyboardShortcut.module.css'
+import styles from './BufferCmd.module.css'
 
-interface KeyboardShortcutProps {
-  key: string
-  ctrl?: boolean
-  alt?: boolean
-  shift?: boolean
-  label?: string
-  inline?: boolean
-}
-const KeyboardShortcut: Component<PropsWithChildren<KeyboardShortcutProps>> = ({
-  key,
-  ctrl,
-  alt,
-  shift,
-  label,
-  inline,
+const BufferCmd: Component<PropsWithChildren> = ({
   children,
 }) => {
-  const keyCombo = [
-    ctrl ? 'Ctrl' : '',
-    alt ? 'Alt' : '',
-    shift ? 'Shift' : '',
-    key
-  ].filter(Boolean).join(' + ')
   return (
-    <div class={inline ? styles['container-inline'] : styles.container}>
-      {label && <span class={styles.label}>
-        {label}
-      </span>}
-      <kbd class={styles.shortcut}>
-        {keyCombo}
-      </kbd>
+    <span class={styles.code}>
       {children}
-    </div>
+    </span> 
   )
 }
 
-export default KeyboardShortcut
+export default BufferCmd
+
